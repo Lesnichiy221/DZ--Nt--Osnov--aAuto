@@ -1,10 +1,11 @@
 package ru.netology.service;
 
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.testng.annotations.Test;
 
-class CashbackHackServiceTest {
+import static org.testng.AssertJUnit.assertEquals;
+
+public class CashbackHackServiceTest {
 
     @Test
     void whatIf1000(){
@@ -14,7 +15,7 @@ class CashbackHackServiceTest {
         int actual = service.remain(1000);
         int expected = 0;
 
-        assertEquals(actual, expected);
+        assertEquals(actual,expected);
     }
 
     @Test
